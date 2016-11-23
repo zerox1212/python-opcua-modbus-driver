@@ -10,4 +10,8 @@ The basic principle is this:
 4. The server will instantiate a python `Device` object which has an `update` method for getting data from Modbus  
 5. MyDevice links to the modbus driver via parameters from OPC UA, so it can be configued from an HMI or UA client  
 
-This example is not tested and has never been run. It is a generic starting point created from a working implementation.
+This example is not tested and has never been run. It is a generic starting point created from a working implementation.  
+
+Dependencies:
+python-opcua
+modbus_tk
