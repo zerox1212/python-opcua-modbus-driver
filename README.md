@@ -13,6 +13,6 @@ The basic principle is this:
 
 This example is not tested and has never been run. It is a generic starting point created from a working implementation.  
 
-Dependencies:
-python-opcua
+Dependencies:  
+python-opcua  
 modbus_tk
