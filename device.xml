@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Aliases>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Boolean">i=1</Alias>
+  </Aliases>
+  <NamespaceUris>
+    <Uri>http://myserver/OPC/</Uri>
+  </NamespaceUris>
+  <UAVariable BrowseName="1:TypeDictionary" DataType="ByteString" NodeId="ns=1;i=6695" ParentNodeId="i=93">
+    <DisplayName>TypeDictionary</DisplayName>
+    <Description>Collects the data type descriptions of http://buhlergroup.com/SVS/</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=93</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6696</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="0:NamespaceUri" DataType="String" NodeId="ns=1;i=6696" ParentNodeId="ns=1;i=6695">
+    <DisplayName>NamespaceUri</DisplayName>
+    <Value>
+      <uax:String>http://buhlergroup.com/SVS/</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6695</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:TypeDictionary" DataType="ByteString" NodeId="ns=1;i=6697" ParentNodeId="i=92">
+    <DisplayName>TypeDictionary</DisplayName>
+    <Description>Collects the data type descriptions of http://buhlergroup.com/SVS/</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=92</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6698</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="0:NamespaceUri" DataType="String" NodeId="ns=1;i=6698" ParentNodeId="ns=1;i=6697">
+    <DisplayName>NamespaceUri</DisplayName>
+    <Value>
+      <uax:String>http://buhlergroup.com/SVS/Types.xsd</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6697</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType BrowseName="1:ProfileType" DataType="String" IsAbstract="true" NodeId="ns=1;i=2001">
+    <DisplayName>ProfileType</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasSubtype">i=63</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6702</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6703</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6701</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable BrowseName="1:LogKill" DataType="Double" NodeId="ns=1;i=6702" ParentNodeId="ns=1;i=2001" ValueRank="1">
+    <DisplayName>LogKill</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:NutTemperature" DataType="Double" NodeId="ns=1;i=6703" ParentNodeId="ns=1;i=2001" ValueRank="1">
+    <DisplayName>NutTemperature</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:Position" DataType="Double" NodeId="ns=1;i=6701" ParentNodeId="ns=1;i=2001" ValueRank="1">
+    <DisplayName>Position</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType BrowseName="1:Device" NodeId="ns=1;i=1004">
+    <DisplayName>Device</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6180</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6584</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6546</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable AccessLevel="3" BrowseName="1:DataAddress" DataType="String" NodeId="ns=1;i=6006" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>DataAddress</DisplayName>
+    <Value>
+      <uax:String>0:0</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:DataSource" DataType="String" NodeId="ns=1;i=6007" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>DataSource</DisplayName>
+    <Value>
+      <uax:String>ModbusRTU</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Description" DataType="String" NodeId="ns=1;i=6008" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>Description</DisplayName>
+    <Value>
+      <uax:String>Device description</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Divisor" DataType="Double" NodeId="ns=1;i=6009" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>Divisor</DisplayName>
+    <Value>
+      <uax:Double>1.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScalingEnable" DataType="Boolean" NodeId="ns=1;i=6180" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>ScalingEnable</DisplayName>
+    <Value>
+      <uax:Boolean>False</uax:Boolean>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Location" DataType="String" NodeId="ns=1;i=6010" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>Location</DisplayName>
+    <Value>
+      <uax:String>Zone0</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Mode" DataType="UInt64" NodeId="ns=1;i=6011" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>Mode</DisplayName>
+    <Value>
+      <uax:UInt64>2</uax:UInt64>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:RawMax" DataType="Double" NodeId="ns=1;i=6013" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>RawMax</DisplayName>
+    <Value>
+      <uax:Double>463.5</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:RawMin" DataType="Double" NodeId="ns=1;i=6012" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>RawMin</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:RawValue" DataType="Double" NodeId="ns=1;i=6584" ParentNodeId="ns=1;i=1004">
+    <DisplayName>RawValue</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScaledMax" DataType="Double" NodeId="ns=1;i=6015" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>ScaledMax</DisplayName>
+    <Value>
+      <uax:Double>463.5</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScaledMin" DataType="Double" NodeId="ns=1;i=6014" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>ScaledMin</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:SimHighLimit" DataType="Double" NodeId="ns=1;i=6016" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>SimHighLimit</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:SimLowLimit" DataType="Double" NodeId="ns=1;i=6017" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>SimLowLimit</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Units" DataType="String" NodeId="ns=1;i=6018" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>Units</DisplayName>
+    <Value>
+      <uax:String>C</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User1" DataType="Double" NodeId="ns=1;i=6019" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>User1</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User2" DataType="Double" NodeId="ns=1;i=6020" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>User2</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User3" DataType="Double" NodeId="ns=1;i=6021" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>User3</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User4" DataType="Double" NodeId="ns=1;i=6022" ParentNodeId="ns=1;i=1004" UserAccessLevel="3">
+    <DisplayName>User4</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:Value" DataType="Double" NodeId="ns=1;i=6546" ParentNodeId="ns=1;i=1004">
+    <DisplayName>Value</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject BrowseName="0:MyDevice" NodeId="i=20002" ParentNodeId="i=85">
+    <DisplayName>Device</DisplayName>
+    <References>
+      <Reference IsForward="false" ReferenceType="Organizes">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasProperty">i=20003</Reference>
+      <Reference ReferenceType="HasProperty">i=20004</Reference>
+      <Reference ReferenceType="HasProperty">i=20005</Reference>
+      <Reference ReferenceType="HasProperty">i=20006</Reference>
+      <Reference ReferenceType="HasProperty">i=20007</Reference>
+      <Reference ReferenceType="HasProperty">i=20008</Reference>
+      <Reference ReferenceType="HasProperty">i=20009</Reference>
+      <Reference ReferenceType="HasProperty">i=20010</Reference>
+      <Reference ReferenceType="HasProperty">i=20011</Reference>
+      <Reference ReferenceType="HasComponent">i=20012</Reference>
+      <Reference ReferenceType="HasProperty">i=20013</Reference>
+      <Reference ReferenceType="HasProperty">i=20014</Reference>
+      <Reference ReferenceType="HasProperty">i=20015</Reference>
+      <Reference ReferenceType="HasProperty">i=20016</Reference>
+      <Reference ReferenceType="HasProperty">i=20017</Reference>
+      <Reference ReferenceType="HasProperty">i=20018</Reference>
+      <Reference ReferenceType="HasProperty">i=20019</Reference>
+      <Reference ReferenceType="HasProperty">i=20020</Reference>
+      <Reference ReferenceType="HasProperty">i=20021</Reference>
+      <Reference ReferenceType="HasComponent">i=20022</Reference>
+    </References>
+  </UAObject>
+  <UAVariable AccessLevel="3" BrowseName="1:DataAddress" DataType="String" NodeId="i=20003" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>DataAddress</DisplayName>
+    <Value>
+      <uax:String>0:0</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:DataSource" DataType="String" NodeId="i=20004" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>DataSource</DisplayName>
+    <Value>
+      <uax:String>ModbusRTU</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Description" DataType="String" NodeId="i=20005" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>Description</DisplayName>
+    <Value>
+      <uax:String>Device description</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Divisor" DataType="Double" NodeId="i=20006" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>Divisor</DisplayName>
+    <Value>
+      <uax:Double>1.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScalingEnable" DataType="Boolean" NodeId="i=20007" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>ScalingEnable</DisplayName>
+    <Value>
+      <uax:Boolean>False</uax:Boolean>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Location" DataType="String" NodeId="i=20008" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>Location</DisplayName>
+    <Value>
+      <uax:String>Zone0</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Mode" DataType="UInt64" NodeId="i=20009" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>Mode</DisplayName>
+    <Value>
+      <uax:UInt64>2</uax:UInt64>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:RawMax" DataType="Double" NodeId="i=20010" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>RawMax</DisplayName>
+    <Value>
+      <uax:Double>463.5</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:RawMin" DataType="Double" NodeId="i=20011" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>RawMin</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:RawValue" DataType="Double" NodeId="i=20012" ParentNodeId="i=20002">
+    <DisplayName>RawValue</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScaledMax" DataType="Double" NodeId="i=20013" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>ScaledMax</DisplayName>
+    <Value>
+      <uax:Double>463.5</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:ScaledMin" DataType="Double" NodeId="i=20014" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>ScaledMin</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:SimHighLimit" DataType="Double" NodeId="i=20015" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>SimHighLimit</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:SimLowLimit" DataType="Double" NodeId="i=20016" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>SimLowLimit</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:Units" DataType="String" NodeId="i=20017" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>Units</DisplayName>
+    <Value>
+      <uax:String>C</uax:String>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User1" DataType="Double" NodeId="i=20018" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>User1</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User2" DataType="Double" NodeId="i=20019" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>User2</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User3" DataType="Double" NodeId="i=20020" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>User3</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable AccessLevel="3" BrowseName="1:User4" DataType="Double" NodeId="i=20021" ParentNodeId="i=20002" UserAccessLevel="3">
+    <DisplayName>User4</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="1:Value" DataType="Double" NodeId="i=20022" ParentNodeId="i=20002">
+    <DisplayName>Value</DisplayName>
+    <Value>
+      <uax:Double>0.0</uax:Double>
+    </Value>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>
