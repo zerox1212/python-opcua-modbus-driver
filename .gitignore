@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+.idea/workspace.xml
+.idea/modules.xml
+.idea/encodings.xml
+.idea/python-opcua-modbus-driver.iml
+.idea/misc.xml
+.idea/vcs.xml
